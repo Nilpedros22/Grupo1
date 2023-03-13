@@ -1,0 +1,128 @@
+body {
+    background-image: url('img/login.jpg');
+    background-size: cover;
+}
+
+.nuevo {
+    position: absolute;
+    right: 525px;
+}
+
+#nombre {
+    position: absolute;
+    right: 610px;
+    top: 85px;
+}
+
+.nombre {
+    position: absolute;
+    top: 115px;
+    right: 156px;
+    width: 525px;
+    height: 45px;
+    padding-left: 10px;
+    border-color: black;
+    border-width: 2px;
+    font-size: 18px;
+}
+
+#apellidos {
+    position: absolute;
+    right: 601px;
+    top: 180px;
+}
+
+.apellidos {
+    position: absolute;
+    top: 211px;
+    right: 156px;
+    width: 525px;
+    height: 45px;
+    padding-left: 10px;
+    border-color: black;
+    border-width: 2px;
+    font-size: 18px;
+}
+
+#correo {
+    position: absolute;
+    right: 534px;
+    top: 275px;
+}
+
+.correo {
+    position: absolute;
+    top: 306px;
+    right: 156px;
+    width: 525px;
+    height: 45px;
+    padding-left: 10px;
+    border-color: black;
+    border-width: 2px;
+    font-size: 18px;
+}
+
+#contraseña {
+    position: absolute;
+    right: 584px;
+    top: 370px;
+}
+
+.contraseña {
+    position: absolute;
+    top: 401px;
+    right: 156px;
+    width: 525px;
+    height: 45px;
+    padding-left: 10px;
+    border-color: black;
+    border-width: 2px;
+    font-size: 18px;
+}
+
+.sexo {
+    position: absolute;
+    top: 445px;
+    right: 507px;
+}
+
+.hombre {
+    position: absolute;
+    top: 500px;
+    right: 670px;
+    height: 22px;
+    width: 22px;
+}
+
+#hombre {
+    position: absolute;
+    top: 488px;
+    right: 600px;
+}
+
+.mujer {
+    position: absolute;
+    top: 500px;
+    right: 500px;
+    height: 22px;
+    width: 22px;
+}
+
+#mujer {
+    position: absolute;
+    top: 488px;
+    right: 440px;
+}
+
+.registro {
+    position: absolute;
+    top: 545px;
+    right: 156px;
+    width: 540px;
+    height: 45px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+    border-width: 0px;
+    font-size: 18px;
+}
