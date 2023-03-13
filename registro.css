@@ -1,0 +1,158 @@
+body {
+    background-image: url('img/login.jpg');
+    background-size: cover;
+}
+
+.nuevo {
+    position: absolute;
+    right: 525px;
+    top: -10px;
+}
+
+#nombre {
+    position: absolute;
+    right: 610px;
+    top: 65px;
+}
+
+.nombre {
+    position: absolute;
+    top: 95px;
+    right: 156px;
+    width: 525px;
+    height: 45px;
+    padding-left: 10px;
+    border-color: black;
+    border-width: 2px;
+    font-size: 18px;
+}
+
+#apellidos {
+    position: absolute;
+    right: 601px;
+    top: 160px;
+}
+
+.apellidos {
+    position: absolute;
+    top: 191px;
+    right: 156px;
+    width: 525px;
+    height: 45px;
+    padding-left: 10px;
+    border-color: black;
+    border-width: 2px;
+    font-size: 18px;
+}
+
+#correo {
+    position: absolute;
+    right: 534px;
+    top: 255px;
+}
+
+.correo {
+    position: absolute;
+    top: 286px;
+    right: 156px;
+    width: 525px;
+    height: 45px;
+    padding-left: 10px;
+    border-color: black;
+    border-width: 2px;
+    font-size: 18px;
+}
+
+#contraseña {
+    position: absolute;
+    right: 584px;
+    top: 350px;
+}
+
+.contraseña {
+    position: absolute;
+    top: 381px;
+    right: 156px;
+    width: 525px;
+    height: 45px;
+    padding-left: 10px;
+    border-color: black;
+    border-width: 2px;
+    font-size: 18px;
+}
+
+.sexo {
+    position: absolute;
+    top: 425px;
+    right: 507px;
+}
+
+.hombre {
+    position: absolute;
+    top: 480px;
+    right: 670px;
+    height: 22px;
+    width: 22px;
+}
+
+#hombre {
+    position: absolute;
+    top: 468px;
+    right: 600px;
+}
+
+.mujer {
+    position: absolute;
+    top: 480px;
+    right: 500px;
+    height: 22px;
+    width: 22px;
+}
+
+#mujer {
+    position: absolute;
+    top: 468px;
+    right: 440px;
+}
+
+.registro {
+    position: absolute;
+    top: 525px;
+    right: 156px;
+    width: 540px;
+    height: 45px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+    border-width: 0px;
+    font-size: 18px;
+}
+
+hr {
+    position: absolute;
+    top: 575px;
+    width: 539px;
+    right: 156px;
+    color: darkgray;
+}
+
+.bienvenida {
+    position: absolute;
+    right: 377px;
+    top: 570px;
+}
+
+.login {
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    top: 640px;
+    right: 156px;
+    width: 540px;
+    height: 45px;
+    border-width: 2px;
+    border-color: black;
+    font-size: 15px;
+}
