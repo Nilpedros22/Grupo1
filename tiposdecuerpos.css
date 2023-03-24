@@ -1,0 +1,83 @@
+body {
+    background-color: #81E5D3;   
+    
+    
+}
+
+#img1{
+
+    width: 600px;
+    height: 700px;
+    position: absolute;
+    left: 30px;
+    top: 110px;
+
+}
+
+#img2{
+
+    width: 600px;
+    height: 700px;
+    position: absolute;
+    left: 655px;
+    top: 110px;
+}
+
+#img3{
+
+    width: 600px;
+    height: 700px;
+    position: absolute;
+    left: 1280px;
+    top: 110px;
+}
+
+#titulo{
+
+    right: 1650px;
+    top: 15px;
+    position: absolute;
+    font-family: "Bloom Monday Demo";
+    src: url("font/BloomMondayDemo.otf");
+    
+}
+
+#inicio{
+
+    right:  620px;
+    top: 15px;
+    position: absolute;
+}
+
+#app{
+
+    width: 200px;
+    height: 300px;
+    right:  290px;
+    top: 15px;
+    position: absolute;
+}
+
+#User{
+
+    width: 200px;
+    height: 300px;
+    right:  100px;
+    top: 15px;
+    position: absolute;
+}
+
+#entrenamiento{
+
+    right: 1700px;
+    top: 850px;
+    position: absolute; 
+    
+}
+
+#titulo2{
+
+    top: 850px;
+    position: absolute; 
+    right: 800px;
+}
