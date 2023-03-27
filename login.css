@@ -1,0 +1,119 @@
+body {
+    background-image: url('img/login.jpg');
+    background-size: cover;
+}
+
+.nuevo {
+    position: absolute;
+    right: 220px;
+    top: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nuevo2 {
+    position: absolute;
+    right: 250px;
+    top: 35px;
+    font-family: Helvetica;
+}
+
+#correo {
+    position: absolute;
+    height: 35px;
+    width: 159px;
+    right: 535px;
+    border: 1px solid black;
+    top: 173px;
+}
+
+.correo {
+    position: absolute;
+    top: 206px;
+    right: 156px;
+    width: 485px;
+    height: 45px;
+    padding-left: 50px;
+    border: 2px solid black;
+    font-size: 18px;
+}
+
+#contraseña {
+    position: absolute;
+    right: 589px;
+    top: 298px;
+    height: 35px;
+    border: 1px solid black;
+    width: 105px;
+}
+
+.contraseña {
+    position: absolute;
+    top: 331px;
+    right: 156px;
+    width: 485px;
+    height: 45px;
+    padding-left: 50px;
+    border-color: black;
+    border: 2px solid black;
+    font-size: 18px;
+}
+
+.boton {
+    position: absolute;
+    top: 420px;
+    right: 156px;
+    width: 540px;
+    height: 45px;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-width: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#correo2 {
+    position: absolute;
+    width: 32px;
+    height: 25px;
+    top: 219px;
+    right: 652px;
+}
+
+#contraseña2 {
+    position: absolute;
+    width: 27px;
+    height: 32px;
+    top: 340px;
+    right: 655px;
+}
+
+.linea {
+    position: absolute;
+    top: 497px;
+    color: black;
+    size: 1px;
+    right: 156px;
+    width: 538px;
+}
+
+.boton-registro {
+    position: absolute;
+    top: 580px;
+    right: 156px;
+    width: 540px;
+    height: 45px;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nuevo {
+    position: absolute;
+    top: 512px;
+    right: 508px;
+    font-family: Arial, Helvetica, sans-serif;
+}
