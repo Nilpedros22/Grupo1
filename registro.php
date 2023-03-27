@@ -12,7 +12,7 @@
     <?php
     $conexion = mysqli_connect("localhost", "root", "") or die("Error al connectar a la bbdd.");
     $db = mysqli_select_db($conexion, "usuarios") or die("Error al connectar a la bbdd");
-    if (!empty($_POST['nombre']) && !empty($_POST['apellidos']) && && !empty($_POST['email']) && !empty($_POST['password']) !empty($_POST['sexo'])) {
+    if (!empty($_POST['nombre']) && !empty($_POST['apellidos']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['sexo'])) {
         $consulta = "INSERT INTO datos (nombre, apellidos, fecha_nacimiento, correo, contraseña) VALUES ('" . $_POST['nombre'] . "','" . $_POST['apellidos'] . "','" . $_POST['email'] . "','" . $_POST['password'] . "','" . $_POST['sexo'] . "');";
         $resultado = mysqli_query($conexion, $consulta) or die("Error en la consulta SQL");
     }
