@@ -1,0 +1,30 @@
+#fondo {
+  margin-left: 5px;
+}
+
+img {
+  width: 20%;
+  height: auto;
+}
+
+.carousel {
+  height: 50%;
+}
+
+.carousel-item img {
+  max-height: 550px;
+}
+
+#fondo {
+  margin-left: 100px;
+  /* ajusta este valor según lo que necesites */
+}
+
+#logo {
+  width: 65px;
+  height: 45px;
+}
+
+a {
+  color: black;
+}
