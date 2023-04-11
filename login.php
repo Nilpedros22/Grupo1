@@ -45,10 +45,10 @@
               <a class="nav-link" href="login.php">Rutinas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="login.php">Alimentacion</a>
+              <a class="nav-link" href="login.php">Alimentacion</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.php">Login</a>
+              <a class="nav-link active" aria-current="page" href="login.php">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="register.php">Registro</a>
