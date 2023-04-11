@@ -23,7 +23,7 @@
     if ($nr == 1) {
       $_SESSION['loggedin'] = true;
       $_SESSION['username'] = $email;
-      header("Location: inicio.php");
+      header("Location: inicio2.php");
     } else if ($nr == 0) {
       echo "Correo o contraseña incorrectos.";
     }
@@ -31,7 +31,7 @@
   ?>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png" alt="NED FITNESS"></a>
+      <a class="navbar-brand" href="inicio.html"><img id="logo" src="img/logo.png" alt="NED FITNESS"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
