@@ -42,10 +42,10 @@
               <a class="nav-link" href="inicio.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="rutinas.html">Rutinas</a>
+              <a class="nav-link" href="login.php">Rutinas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="alimentacion.html">Alimentacion</a>
+              <a class="nav-link active" aria-current="page" href="login.php">Alimentacion</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="login.php">Login</a>

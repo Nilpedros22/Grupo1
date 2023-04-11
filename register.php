@@ -32,10 +32,10 @@
 							<a class="nav-link" href="inicio.html">Inicio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="rutinas.html">Rutinas</a>
+							<a class="nav-link" href="login.php">Rutinas</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="alimentacion.html">Alimentación</a>
+							<a class="nav-link" href="login.php">Alimentación</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="login.php">Login</a>
