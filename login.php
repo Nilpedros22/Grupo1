@@ -23,7 +23,7 @@
     if ($nr == 1) {
       $_SESSION['loggedin'] = true;
       $_SESSION['username'] = $email;
-      header("Location: inicio2.php");
+      header("Location: inicio.php");
     } else if ($nr == 0) {
       echo "Correo o contraseña incorrectos.";
     }
@@ -58,33 +58,35 @@
       </div>
     </div>
   </nav>
-  <div class="bg-info d-flex justify-content-center align-items-center vh-100">
-    <div class="bg-white p-5 rounded-5 text-secondary shadow" style="width: 25rem">
-      <div class="d-flex justify-content-center">
-        <img src="assets/login-icon.svg" alt="login-icon" style="height: 7rem" />
-      </div>
-      <div class="text-center fs-1 fw-bold">Login</div>
-      <div class="input-group mt-4">
-        <div class="input-group-text bg-info">
-          <img src="assets/username-icon.svg" alt="username-icon" style="height: 1rem" />
+  <form action="" method="post" class="needs-validation" novalidate="" autocomplete="off">
+    <div class="bg-info d-flex justify-content-center align-items-center vh-100">
+      <div class="bg-white p-5 rounded-5 text-secondary shadow" style="width: 25rem">
+        <div class="d-flex justify-content-center">
+          <img src="assets/login-icon.svg" alt="login-icon" style="height: 7rem" />
         </div>
-        <input class="form-control bg-light" type="email" name="email" placeholder="Correo" />
-      </div>
-      <div class="input-group mt-1">
-        <div class="input-group-text bg-info">
-          <img src="assets/password-icon.svg" alt="password-icon" style="height: 1rem" />
+        <div class="text-center fs-1 fw-bold">Login</div>
+        <div class="input-group mt-4">
+          <div class="input-group-text bg-info">
+            <img src="assets/username-icon.svg" alt="username-icon" style="height: 1rem" />
+          </div>
+          <input class="form-control bg-light" type="email" name="email" placeholder="Correo" />
         </div>
-        <input class="form-control bg-light" type="password" name="password" placeholder="Contraseña" />
-      </div>
-      <div class="btn btn-info text-white w-100 mt-4 fw-semibold shadow-sm">
-        Login
-      </div>
-      <div class="d-flex gap-1 justify-content-center mt-1">
-        <div>¿No tienes cuenta?</div>
-        <a href="register.php" class="text-decoration-none text-info fw-semibold">Registrate</a>
+        <div class="input-group mt-1">
+          <div class="input-group-text bg-info">
+            <img src="assets/password-icon.svg" alt="password-icon" style="height: 1rem" />
+          </div>
+          <input class="form-control bg-light" type="password" name="password" placeholder="Contraseña" />
+        </div>
+        <div>
+          <input type="submit" name="login" class="btn btn-info text-white w-100 mt-4 fw-semibold shadow-sm" value="Login">
+        </div>
+        <div class="d-flex gap-1 justify-content-center mt-1">
+          <div>¿No tienes cuenta?</div>
+          <a href="register.php" class="text-decoration-none text-info fw-semibold">Registrate</a>
+        </div>
       </div>
     </div>
-  </div>
+  </form>
   <script src="js/login.js"></script>
 </body>
 

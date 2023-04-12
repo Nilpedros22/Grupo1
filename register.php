@@ -58,10 +58,10 @@
 					<div class="card shadow-lg">
 						<div class="card-body p-5">
 							<h1 class="fs-4 card-title fw-bold mb-4">Registrate</h1>
-							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+							<form action="" method="post" class="needs-validation" novalidate="" autocomplete="off">
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="name">Nombre</label>
-									<input id="name" type="text" class="form-control" name="name" value="" required autofocus>
+									<input id="nombre" type="text" class="form-control" name="nombre" value="" required autofocus>
 									<div class="invalid-feedback">
 										El nombre es obligatorio
 									</div>
@@ -93,16 +93,14 @@
 
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="password">Contraseña</label>
-									<input id="password" type="password" class="form-control" name="password" required>
+									<input id="password" type="password" minlength="6" class="form-control" name="password" required>
 									<div class="invalid-feedback">
 										La contraseña es obligatoria
 									</div>
 								</div>
 
 								<div class="align-items-center d-flex">
-									<button type="submit" class="btn btn-info text-white w-100 mt-4 fw-semibold shadow-sm">
-										Register
-									</button>
+									<input type="submit" id="register" class="btn btn-info text-white w-100 mt-4 fw-semibold shadow-sm" value="Register">
 								</div>
 							</form>
 						</div>
