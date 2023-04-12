@@ -16,7 +16,7 @@ img {
 }
 
 #fondo {
-  margin-left: 100px;
+  margin-left: 170px;
   /* ajusta este valor según lo que necesites */
 }
 
@@ -27,4 +27,13 @@ img {
 
 a {
   color: black;
+}
+
+body{
+
+  background-color: bg-info;
+}
+.titulo{
+  margin-bottom: 30px;
+  color: white;
 }
