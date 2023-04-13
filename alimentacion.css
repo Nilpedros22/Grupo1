@@ -1,35 +1,28 @@
-.card-title{
-
+.card-title {
     font-size: 30px;
     padding: 15px;
-    
+
 }
 
-.card-title1{
-    
+.card-title1 {
     font-size: 30px;
     padding: 15px;
-    
+
 }
 
-.card-text{
-
+.card-text {
     padding: 15px;
 }
 
-.card-text1{
-
-
+.card-text1 {
     padding: 15px;
 }
 
-.btn{
-
+.btn {
     margin-left: 15px;
     margin-bottom: 15px;
 }
 
-.container{
-
+.container {
     margin-top: 70px;
 }

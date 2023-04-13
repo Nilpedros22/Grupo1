@@ -29,45 +29,42 @@ a {
   color: black;
 }
 
-body{
-
+body {
   background-color: bg-info;
 }
-.titulo{
+
+.titulo {
   margin-bottom: 30px;
   color: white;
 }
 
-#carta4{
-
-   margin-top: 20px;
-   width: 420px;
-
+.titulo2 {
+  margin-top: -40px;
+  margin-bottom: 30px;
+  color: white;
 }
 
-#tarjeta6{
+#carta4 {
+  margin-top: 20px;
+  width: 420px;
+}
 
+#tarjeta6 {
   margin-top: 25px;
-
 }
 
-#tarjeta5{
-
+#tarjeta5 {
   margin-top: -25px;
-
 }
 
-#tarjeta4{
-
+#tarjeta4 {
   margin-top: -50px;
-
 }
 
-#carta5{
-
+#carta5 {
   margin-top: -20px;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #56DBFF; 
+  color: #56DBFF;
 }
