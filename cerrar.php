@@ -43,11 +43,24 @@
       </div>
     </div>
   </nav>
-  <main>
-    <h2>NED FITNESS APP</h2>
-    <h3>ELECCION DE MILLONES DE USUARIOS</h3>
-    <p>Creando productos digitales disenados para satisfacer todas sus necesidades en salud y estilo de vida</p>
-  </main>
+  <div class="bg-info d-flex justify-content-center align-items-center vh-100">
+    <div class="bg-white p-5 rounded-5 text-secondary shadow" style="width: 25rem">
+      <div class="d-flex justify-content-center">
+        <img src="assets/login-icon.svg" alt="login-icon" style="height: 7rem" />
+      </div>
+      <?php
+      if (isset($_SESSION['loggedin'])) {
+        echo "<div class='text-center fs-4 fw-bold'>" . $_SESSION['username'] . "</div>";
+      }
+      ?>
+      <div class="input-group mt-1">
+        <input type="button" onclick="location.href = 'editar.php'" name="edit" class="btn btn-info text-white w-100 mt-4 fw-semibold shadow-sm" value="Editar Usuario">
+      </div>
+      <div class="input-group mt-1">
+        <input type="button" onclick="location.href = 'logout.php'" name="logout" class="btn btn-info text-white w-100 mt-4 fw-semibold shadow-sm" value="Cerrar Sesión">
+      </div>
+    </div>
+  </div>
   <footer>
 
   </footer>
