@@ -1,6 +1,9 @@
 table {
   width: 90%;
   margin-left: 100px;
+  margin-bottom: 30px;
+
+
 }
 
 thead th {
@@ -54,4 +57,11 @@ tbody tr:nth-child(odd) {
 
 a {
   color: black;
+}
+
+.titulo {
+  margin-left: 95px;
+  color: white;
+  margin-bottom: 30px;
+
 }
