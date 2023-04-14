@@ -82,7 +82,7 @@
 		</div>
 		<div class="row mt-5">
 			<div class="col-md-4">
-				<div class="card">
+				<div class="card" id="cartamancuernas">
 					<img src="https://i.blogs.es/5c0b8f/aperturas/1366_2000.webp" class="card-img-top" alt="Aperturas con mancuernas">
 					<div class="card-body">
 						<h5 class="card-title">Aperturas con mancuernas</h5>

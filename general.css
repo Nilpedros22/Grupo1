@@ -47,6 +47,7 @@ body {
 #carta4 {
   margin-top: 20px;
   width: 420px;
+  margin-bottom: 55px;
 }
 
 #tarjeta6 {
@@ -59,12 +60,25 @@ body {
 
 #tarjeta4 {
   margin-top: -50px;
+  margin-bottom: 55px;
 }
 
 #carta5 {
   margin-top: -20px;
+  margin-bottom: 35px;
+}
+
+#cartamancuernas{
+  margin-bottom: 45px;
+  margin-top: -20px;
+}
+#prensahombro{
+
+  margin-bottom: 55px;
+  margin-top: -15px;
 }
 
 .navbar-nav .nav-link:hover {
   color: #56DBFF;
 }
+

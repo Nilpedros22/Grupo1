@@ -48,9 +48,6 @@
     <h3>ELECCION DE MILLONES DE USUARIOS</h3>
     <p>Creando productos digitales disenados para satisfacer todas sus necesidades en salud y estilo de vida</p>
   </main>
-  <footer>
-
-  </footer>
 </body>
 
 </html>

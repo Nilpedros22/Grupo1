@@ -81,7 +81,7 @@
 		</div>
 		<div class="row mt-5">
 			<div class="col-md-4 offset-md-4">
-				<div class="card">
+				<div class="card" id="prensahombro">
 					<img src="https://depowerlifting.site/wp-content/uploads/2021/06/press-frontal-de-hombros-en-maquina-sentado-y-agarre-neutro-1537.png" class="card-img-top" alt="Prensa de hombros en máquina">
 					<div class="card-body">
 						<h5 class="card-title">Prensa de hombros en máquina</h5>
