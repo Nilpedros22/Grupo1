@@ -2,6 +2,9 @@
 <html lang="es">
 
 <head>
+	<?php
+	session_start();
+	?>
 	<title>Rutina de espalda </title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="general.css">
@@ -11,8 +14,7 @@
 	<nav class="navbar navbar-expand-lg bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="inicio.php"><img id="logo" src="img/logo.png" alt="NED FITNESS"></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="text-end">
@@ -30,7 +32,7 @@
 						<li class="nav-item">
 							<?php
 							if (isset($_SESSION['loggedin'])) {
-							  echo  "<a class='nav-link' href='cerrar.php'>" . $_SESSION['username'] . "</a>";
+								echo  "<a class='nav-link' href='cerrar.php'>" . $_SESSION['username'] . "</a>";
 							}
 							?>
 						</li>
@@ -44,8 +46,7 @@
 		<div class="row mt-5">
 			<div class="col-md-4">
 				<div class="card">
-					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/remo-con-barra-de-pie-init-pos-6237.png"
-						class="card-img-top" alt="Remo con barra">
+					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/remo-con-barra-de-pie-init-pos-6237.png" class="card-img-top" alt="Remo con barra">
 					<div class="card-body">
 						<h5 class="card-title">Remo con barra</h5>
 						<p class="card-text">El remo con barra es un excelente ejercicio para trabajar los músculos de
@@ -56,8 +57,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card">
-					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/dominadas-init-pos-4753.png"
-						class="card-img-top" alt="Dominadas">
+					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/dominadas-init-pos-4753.png" class="card-img-top" alt="Dominadas">
 					<div class="card-body">
 						<h5 class="card-title">Dominadas</h5>
 						<p class="card-text">Las dominadas son un ejercicio clásico de espalda que puedes realizar en
@@ -68,8 +68,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card">
-					<img src="https://i.blogs.es/19909d/pesomuerto1/1366_2000.webp" class="card-img-top"
-						alt="Peso muerto">
+					<img src="https://i.blogs.es/19909d/pesomuerto1/1366_2000.webp" class="card-img-top" alt="Peso muerto">
 					<div class="card-body">
 						<h5 class="card-title">Peso muerto</h5>
 						<p class="card-text">El peso muerto es un ejercicio compuesto que trabaja varios grupos
@@ -81,8 +80,7 @@
 		</div>
 		<div class="col-md-4">
 			<div class="card" id="carta4">
-				<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/pullover-con-cable-polea-de-pie-init-pos-9896.png"
-					class="card-img-top" alt="Pullover con cable">
+				<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/pullover-con-cable-polea-de-pie-init-pos-9896.png" class="card-img-top" alt="Pullover con cable">
 				<div class="card-body">
 					<h5 class="card-title">Pullover con cable</h5>
 					<p class="card-text">El pullover con cable es un ejercicio efectivo para trabajar los músculos de la

@@ -2,6 +2,9 @@
 <html lang="es">
 
 <head>
+	<?php
+	session_start();
+	?>
 	<title>Rutina de pierna</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="general.css">
@@ -11,8 +14,7 @@
 	<nav class="navbar navbar-expand-lg bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="inicio.php"><img id="logo" src="img/logo.png" alt="NED FITNESS"></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="text-end">
@@ -30,7 +32,7 @@
 						<li class="nav-item">
 							<?php
 							if (isset($_SESSION['loggedin'])) {
-							  echo  "<a class='nav-link' href='cerrar.php'>" . $_SESSION['username'] . "</a>";
+								echo  "<a class='nav-link' href='cerrar.php'>" . $_SESSION['username'] . "</a>";
 							}
 							?>
 						</li>
@@ -44,8 +46,7 @@
 		<div class="row mt-5">
 			<div class="col-md-4">
 				<div class="card">
-					<img src="https://i.blogs.es/1fd119/sentadilla/1366_2000.webp" class="card-img-top"
-						alt="Sentadillas con barra">
+					<img src="https://i.blogs.es/1fd119/sentadilla/1366_2000.webp" class="card-img-top" alt="Sentadillas con barra">
 					<div class="card-body">
 						<h5 class="card-title">Sentadillas con barra</h5>
 						<p class="card-text">Las sentadillas con barra son uno de los ejercicios más efectivos para
@@ -56,8 +57,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card">
-					<img src="https://i.blogs.es/7425be/prensa1/1366_2000.webp" class="card-img-top"
-						alt="Prensa de piernas">
+					<img src="https://i.blogs.es/7425be/prensa1/1366_2000.webp" class="card-img-top" alt="Prensa de piernas">
 					<div class="card-body">
 						<h5 class="card-title">Prensa de piernas</h5>
 						<p class="card-text">La prensa de piernas es un ejercicio excelente para trabajar los músculos
@@ -68,8 +68,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card">
-					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/zancadas-con-mancuernas-init-pos-1547.png"
-						class="card-img-top" alt="Zancadas con mancuernas">
+					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/zancadas-con-mancuernas-init-pos-1547.png" class="card-img-top" alt="Zancadas con mancuernas">
 					<div class="card-body">
 						<h5 class="card-title">Zancadas con mancuernas</h5>
 						<p class="card-text">Las zancadas con mancuernas son un excelente ejercicio para trabajar los
@@ -82,8 +81,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card" id="tarjeta4">
-					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/zancada-con-la-otra-pierna-elevada-init-pos-9604.png"
-						class="card-img-top" alt="Prensa de piernas">
+					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/zancada-con-la-otra-pierna-elevada-init-pos-9604.png" class="card-img-top" alt="Prensa de piernas">
 					<div class="card-body">
 						<h5 class="card-title">Sentadilla Bulgara</h5>
 						<p class="card-text">La sentadilla búlgara es un ejercicio de piernas muy efectivo que se enfoca
@@ -99,8 +97,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card" id="tarjeta5">
-					<img src="https://i.blogs.es/310362/elevacion2/1366_2000.webp" class="card-img-top"
-						alt="Elevaciones de talones">
+					<img src="https://i.blogs.es/310362/elevacion2/1366_2000.webp" class="card-img-top" alt="Elevaciones de talones">
 					<div class="card-body">
 						<h5 class="card-title">Elevaciones de talones</h5>
 						<p class="card-text">Las elevaciones de talones son un excelente ejercicio para trabajar los
@@ -112,8 +109,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card" id="tarjeta6">
-					<img src="https://i.blogs.es/1fd119/sentadilla/1366_2000.webp" class="card-img-top"
-						alt="Sentadilla con barra">
+					<img src="https://i.blogs.es/1fd119/sentadilla/1366_2000.webp" class="card-img-top" alt="Sentadilla con barra">
 					<div class="card-body">
 						<h5 class="card-title">Curl de pierna acostado</h5>
 						<p class="card-text">El curl de pierna acostado es un ejercicio que se centra principalmente en

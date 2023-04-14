@@ -2,11 +2,13 @@
 <html lang="es">
 
 <head>
+  <?php
+  session_start();
+  ?>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Rutinas</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="general.css">
 </head>
 
@@ -14,8 +16,7 @@
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="inicio.php"><img id="logo" src="img/logo.png" alt="NED FITNESS"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="text-end">
@@ -59,9 +60,7 @@
       </div>
       <div class="col-md-4 mb-3">
         <div class="card">
-          <img
-            src="https://manmedicalinstitute.com/wp-content/uploads/2022/05/Los-mejores-entrenamientos-para-conseguir-una-espalda-en-forma-de-V.jpg"
-            class="card-img-top" alt="Back">
+          <img src="https://manmedicalinstitute.com/wp-content/uploads/2022/05/Los-mejores-entrenamientos-para-conseguir-una-espalda-en-forma-de-V.jpg" class="card-img-top" alt="Back">
           <div class="card-body">
             <h5 class="card-title">Espalda</h5>
             <p class="card-text">Mejora tu postura y fortalece tus dorsales.</p>
@@ -71,8 +70,7 @@
       </div>
       <div class="col-md-4 mb-3">
         <div class="card">
-          <img src="https://entrenadorpersonal24.com/wp-content/uploads/2019/03/mejores-consejos-tr%C3%ADceps.jpg"
-            class="card-img-top" alt="Chest">
+          <img src="https://entrenadorpersonal24.com/wp-content/uploads/2019/03/mejores-consejos-tr%C3%ADceps.jpg" class="card-img-top" alt="Chest">
           <div class="card-body">
             <h5 class="card-title">Tríceps</h5>
             <p class="card-text">Mejora tus tríceps y fortalece tus brazos en general.</p>
@@ -82,8 +80,7 @@
       </div>
       <div class="col-md-4 mb-3">
         <div class="card">
-          <img src="https://i.blogs.es/6eb52d/1366_2000---2022-10-14t090904.532/1366_2000.webp" class="card-img-top"
-            alt="Shoulders">
+          <img src="https://i.blogs.es/6eb52d/1366_2000---2022-10-14t090904.532/1366_2000.webp" class="card-img-top" alt="Shoulders">
           <div class="card-body">
             <h5 class="card-title">Hombros</h5>
             <p class="card-text">Entrena tus hombros con estos ejercicios para ganar fuerza y tamaño.</p>
@@ -93,9 +90,7 @@
       </div>
       <div class="col-md-4 mb-3">
         <div class="card">
-          <img
-            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/body-building-in-progress-royalty-free-image-1590394269.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
-            class="card-img-top" alt="Biceps">
+          <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/body-building-in-progress-royalty-free-image-1590394269.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*" class="card-img-top" alt="Biceps">
           <div class="card-body">
             <h5 class="card-title">Bíceps</h5>
             <p class="card-text">Define tus brazos y aumenta el tamaño de tus bíceps con estos ejercicios.</p>

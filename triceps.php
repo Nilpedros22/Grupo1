@@ -2,6 +2,9 @@
 <html lang="es">
 
 <head>
+	<?php
+	session_start();
+	?>
 	<title>Rutina de Triceps </title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="general.css">
@@ -11,8 +14,7 @@
 	<nav class="navbar navbar-expand-lg bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="inicio.php"><img id="logo" src="img/logo.png" alt="NED FITNESS"></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="text-end">
@@ -30,7 +32,7 @@
 						<li class="nav-item">
 							<?php
 							if (isset($_SESSION['loggedin'])) {
-							  echo  "<a class='nav-link' href='cerrar.php'>" . $_SESSION['username'] . "</a>";
+								echo  "<a class='nav-link' href='cerrar.php'>" . $_SESSION['username'] . "</a>";
 							}
 							?>
 						</li>
@@ -44,8 +46,7 @@
 		<div class="row mt-5">
 			<div class="col-md-4">
 				<div class="card">
-					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/fondos-en-paralelas-en-maquina-asistida-init-pos-4380.png"
-						class="card-img-top" alt="Remo con barra">
+					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/fondos-en-paralelas-en-maquina-asistida-init-pos-4380.png" class="card-img-top" alt="Remo con barra">
 					<div class="card-body">
 						<h5 class="card-title">Fondos de Tríceps</h5>
 						<p class="card-text">Los fondos de tríceps son un ejercicio efectivo para trabajar los tríceps.
@@ -56,8 +57,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card">
-					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/extension-de-triceps-de-pie-con-polea-alta-init-pos-2088.png"
-						class="card-img-top" alt="Dominadas">
+					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/extension-de-triceps-de-pie-con-polea-alta-init-pos-2088.png" class="card-img-top" alt="Dominadas">
 					<div class="card-body">
 						<h5 class="card-title">Extensiones de Triceps</h5>
 						<p class="card-text">Las extensiones de tríceps son otro ejercicio efectivo para trabajar los
@@ -68,8 +68,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card">
-					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/extension-de-triceps-o-press-frances-con-barra-en-banco-inclinado-init-pos-7429.png"
-						class="card-img-top" alt="Peso muerto">
+					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/extension-de-triceps-o-press-frances-con-barra-en-banco-inclinado-init-pos-7429.png" class="card-img-top" alt="Peso muerto">
 					<div class="card-body">
 						<h5 class="card-title">Press Frances</h5>
 						<p class="card-text">El press francés es un gran ejercicio para trabajar los tríceps. Para
@@ -81,8 +80,7 @@
 		</div>
 		<div class="col-md-4">
 			<div class="card" id="carta4">
-				<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/extension-de-triceps-a-una-con-mancuerna-de-pie-init-pos-7296.png"
-					class="card-img-top" alt="Pullover con cable">
+				<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/extension-de-triceps-a-una-con-mancuerna-de-pie-init-pos-7296.png" class="card-img-top" alt="Pullover con cable">
 				<div class="card-body">
 					<h5 class="card-title">Extensión de Tríceps con Mancuernas</h5>
 					<p class="card-text">Las extensiones de tríceps con mancuernas son un excelente ejercicio para

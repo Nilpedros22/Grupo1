@@ -2,6 +2,9 @@
 <html>
 
 <head>
+	<?php
+	session_start();
+	?>
 	<title>Rutina de pecho</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="general.css">
@@ -11,8 +14,7 @@
 	<nav class="navbar navbar-expand-lg bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="inicio.php"><img id="logo" src="img/logo.png" alt="NED FITNESS"></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="text-end">
@@ -30,7 +32,7 @@
 						<li class="nav-item">
 							<?php
 							if (isset($_SESSION['loggedin'])) {
-							  echo  "<a class='nav-link' href='cerrar.php'>" . $_SESSION['username'] . "</a>";
+								echo  "<a class='nav-link' href='cerrar.php'>" . $_SESSION['username'] . "</a>";
 							}
 							?>
 						</li>
@@ -44,8 +46,7 @@
 		<div class="row mt-5">
 			<div class="col-md-4">
 				<div class="card">
-					<img src="https://i.blogs.es/85d668/bench-press-1/1366_2000.webp" class="card-img-top"
-						alt="Press de banca con barra">
+					<img src="https://i.blogs.es/85d668/bench-press-1/1366_2000.webp" class="card-img-top" alt="Press de banca con barra">
 					<div class="card-body">
 						<h5 class="card-title">Press de banca con barra</h5>
 						<p class="card-text">El press de banca con barra es uno de los ejercicios más populares para
@@ -57,8 +58,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card">
-					<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/press-up-1585328992.jpg?resize=480:*"
-						class="card-img-top" alt="Flexiones de pecho">
+					<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/press-up-1585328992.jpg?resize=480:*" class="card-img-top" alt="Flexiones de pecho">
 					<div class="card-body">
 						<h5 class="card-title">Flexiones de pecho</h5>
 						<p class="card-text">Las flexiones de pecho son un ejercicio clásico que se pueden hacer en
@@ -69,8 +69,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card">
-					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/press-pectoral-con-mancuernas-en-banco-inclinado-init-pos-8206.png"
-						class="card-img-top" alt="Press de banca inclinado con mancuernas">
+					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/press-pectoral-con-mancuernas-en-banco-inclinado-init-pos-8206.png" class="card-img-top" alt="Press de banca inclinado con mancuernas">
 					<div class="card-body">
 						<h5 class="card-title">Press de banca inclinado con mancuernas</h5>
 						<p class="card-text">El press de banca inclinado con mancuernas es un ejercicio excelente para
@@ -84,8 +83,7 @@
 		<div class="row mt-5">
 			<div class="col-md-4">
 				<div class="card">
-					<img src="https://i.blogs.es/5c0b8f/aperturas/1366_2000.webp" class="card-img-top"
-						alt="Aperturas con mancuernas">
+					<img src="https://i.blogs.es/5c0b8f/aperturas/1366_2000.webp" class="card-img-top" alt="Aperturas con mancuernas">
 					<div class="card-body">
 						<h5 class="card-title">Aperturas con mancuernas</h5>
 						<p class="card-text">Las aperturas con mancuernas son un ejercicio excelente para trabajar los
