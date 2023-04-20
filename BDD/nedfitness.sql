@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-04-2023 a las 19:27:55
+-- Tiempo de generación: 20-04-2023 a las 16:42:19
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.1.12
 
@@ -33,8 +33,7 @@ CREATE TABLE `ejercicios` (
   `ID` int(11) NOT NULL,
   `Nombre` varchar(50) NOT NULL,
   `Descripción` varchar(50) NOT NULL,
-  `Grupo_Muscular` varchar(50) NOT NULL,
-  `Nivel` varchar(50) NOT NULL
+  `Grupo_Muscular` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -44,28 +43,10 @@ CREATE TABLE `ejercicios` (
 --
 
 CREATE TABLE `nutricion` (
-  `ID` int(11) NOT NULL,
-  `Genero` varchar(50) NOT NULL,
-  `Edad` int(11) NOT NULL,
-  `Actividad_fisica` varchar(50) NOT NULL,
-  `Calorias_diarias` int(11) NOT NULL,
-  `Cantidad_Alimentación` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `rutinas`
---
-
-CREATE TABLE `rutinas` (
-  `ID` int(11) NOT NULL,
-  `Nombre` varchar(50) NOT NULL,
-  `Descripción` varchar(50) NOT NULL,
-  `Dias_Entrenamiento` int(11) NOT NULL,
-  `Duracion` varchar(50) NOT NULL,
-  `Lista_Ejercicios` int(11) NOT NULL,
-  `ID_Usuario` int(11) NOT NULL
+  `Tipo_Dieta` varchar(50) NOT NULL,
+  `Dieta` varchar(50) NOT NULL,
+  `Momento_Dia` varchar(50) NOT NULL,
+  `Descripción` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -94,19 +75,6 @@ ALTER TABLE `ejercicios`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indices de la tabla `nutricion`
---
-ALTER TABLE `nutricion`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indices de la tabla `rutinas`
---
-ALTER TABLE `rutinas`
-  ADD PRIMARY KEY (`ID`),
-  ADD KEY `ID_Usuario` (`ID_Usuario`);
-
---
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
@@ -123,32 +91,10 @@ ALTER TABLE `ejercicios`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `nutricion`
---
-ALTER TABLE `nutricion`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `rutinas`
---
-ALTER TABLE `rutinas`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
   MODIFY `ID` int(4) NOT NULL AUTO_INCREMENT;
-
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `rutinas`
---
-ALTER TABLE `rutinas`
-  ADD CONSTRAINT `rutinas_ibfk_1` FOREIGN KEY (`ID_Usuario`) REFERENCES `usuarios` (`ID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
