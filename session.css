@@ -4,5 +4,17 @@
 }
 
 a {
+    color: #808080;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #56DBFF;
+}
+
+#active {
     color: black;
+}
+
+.navbar-nav #active:hover {
+    color: #56DBFF;
 }

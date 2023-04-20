@@ -15,10 +15,10 @@
   session_start();
   if (isset($_POST['login'])) {
     $conexion = mysqli_connect("localhost", "root", "") or die("Error al conectar a la bbdd");
-    $db = mysqli_select_db($conexion, "usuarios") or die("Error al conectar a la bbdd");
+    $db = mysqli_select_db($conexion, "nedfitness") or die("Error al conectar a la bbdd");
     $email = $_POST["email"];
     $password = $_POST["password"];
-    $query = mysqli_query($conexion, "SELECT * FROM datos WHERE correo='" . $email . "' AND contraseña ='" . $password . "'");
+    $query = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='" . $email . "' AND contraseña ='" . $password . "'");
     $nr = mysqli_num_rows($query);
     if ($nr == 1) {
       $_SESSION['loggedin'] = true;
@@ -45,7 +45,7 @@
               <a class="nav-link" href="login.php">Rutinas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.php">Alimentacion</a>
+              <a class="nav-link" href="login.php">Alimentación</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="login.php">Login</a>

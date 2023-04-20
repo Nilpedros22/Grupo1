@@ -12,10 +12,13 @@
 <body class="bg-info">
 	<?php
 	$conexion = mysqli_connect("localhost", "root", "") or die("Error al connectar a la bbdd.");
-	$db = mysqli_select_db($conexion, "usuarios") or die("Error al connectar a la bbdd");
+	$db = mysqli_select_db($conexion, "nedfitness") or die("Error al connectar a la bbdd");
 	if (!empty($_POST['nombre']) && !empty($_POST['apellidos']) && !empty($_POST['fecha']) && !empty($_POST['email']) && !empty($_POST['password'])) {
-		$consulta = "INSERT INTO datos (nombre, apellidos, fecha_nacimiento, correo, contraseña) VALUES ('" . $_POST['nombre'] . "','" . $_POST['apellidos'] . "','" . $_POST['fecha'] . "','" . $_POST['email'] . "','" . $_POST['password'] . "');";
+		$consulta = "INSERT INTO usuarios (nombre, apellidos, fecha_nacimiento, correo, contraseña) VALUES ('" . $_POST['nombre'] . "','" . $_POST['apellidos'] . "','" . $_POST['fecha'] . "','" . $_POST['email'] . "','" . $_POST['password'] . "');";
 		$resultado = mysqli_query($conexion, $consulta) or die("Error en la consulta SQL");
+		if ($resultado) {
+			header("Location: login.php");
+		}
 	}
 	mysqli_close($conexion);
 	?>
@@ -41,7 +44,7 @@
 							<a class="nav-link" href="login.php">Login</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="register.php">Registro</a>
+							<a class="nav-link active" id="active" aria-current="page" href="register.php">Registro</a>
 						</li>
 					</ul>
 				</div>
@@ -114,6 +117,7 @@
 			</div>
 		</div>
 	</section>
+	<br>
 	<script src="js/login.js"></script>
 </body>
 

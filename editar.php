@@ -14,7 +14,7 @@
     session_start();
     if (isset($_SESSION['loggedin'])) {
         $conexion = mysqli_connect("localhost", "root", "") or die("Error al conectar a la bbdd");
-        $db = mysqli_select_db($conexion, "usuarios") or die("Error al conectar a la bbdd");
+        $db = mysqli_select_db($conexion, "nedfitness") or die("Error al conectar a la bbdd");
         $correo = $_SESSION["username"];
         if (isset($_POST['update'])) {
             $new_nombre = $_POST['nombre'];
@@ -23,14 +23,14 @@
             $new_email = $_POST['email'];
             $new_password = $_POST['password'];
 
-            $update_query = mysqli_query($conexion, "UPDATE datos SET nombre='$new_nombre', apellidos='$new_apellido', fecha_nacimiento='$new_fecha', correo='$new_email', contraseña='$new_password' WHERE correo='$correo'");
+            $update_query = mysqli_query($conexion, "UPDATE usuarios SET nombre='$new_nombre', apellidos='$new_apellido', fecha_nacimiento='$new_fecha', correo='$new_email', contraseña='$new_password' WHERE correo='$correo'");
             if ($update_query) {
-                header("Location: inicio.html");
+                header("Location: inicio.php");
             } else {
                 echo "Error al modificar los datos";
             }
         }
-        $get_query = mysqli_query($conexion, "SELECT * FROM datos WHERE correo='$correo'");
+        $get_query = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='$correo'");
         $get_result = mysqli_fetch_array($get_query);
     ?>
         <nav class="navbar navbar-expand-lg bg-light">
@@ -43,7 +43,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="inicio.php">Inicio</a>
+                                <a class="nav-link" href="inicio.php">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="rutinas.php">Rutinas</a>
@@ -54,7 +54,7 @@
                             <li class="nav-item">
                                 <?php
                                 if (isset($_SESSION['loggedin'])) {
-                                    echo  "<a class='nav-link' href='cerrar.php'>" . $_SESSION['username'] . "</a>";
+                                    echo  "<a class='nav-link active' aria-current='page' id='active' href='cerrar.php'>" . $_SESSION['username'] . "</a>";
                                 }
                                 ?>
                             </li>
@@ -124,6 +124,7 @@
                 </div>
             </div>
         </section>
+        <br>
     <?php
     } else {
         echo "Logueate para acceder a la página.";
