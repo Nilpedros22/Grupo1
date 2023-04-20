@@ -97,9 +97,7 @@
 			</div>
 		</div>
 	</div>
-	<footer>
-
-	</footer>
+	<br>
 </body>
 
 </html>

@@ -58,7 +58,6 @@
         </tr>
       </thead>
       <tbody>
-
         <tr>
           <td>Dieta 1</td>
           <td>Claras de huevo<br>Espinacas<br>Té verde</td>
@@ -83,7 +82,6 @@
           <td>Batido de proteínas<br>Almendras sin sal</td>
           <td>Salmón al horno<br>Ensalada de rúcula, tomate y pepino<br>Calabacín a la plancha</td>
         </tr>
-
         <tr>
           <td>Dieta 4</td>
           <td>Huevos revueltos<br>Tostada integral<br>Queso fresco 0%<br>Tomate natural</td>
@@ -100,11 +98,10 @@
           <td>Barrita de proteína<br>Frutas del bosque</td>
           <td>Ternera<br>Ensalada verde</td>
         </tr>
-
-        </tr>
       </tbody>
     </table>
   </div>
+  <br>
 </body>
 
 </html>
