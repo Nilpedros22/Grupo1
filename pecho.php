@@ -4,6 +4,11 @@
 <head>
 	<?php
 	session_start();
+	$conexion = mysqli_connect("localhost", "root", "") or die("Error al conectar a la bbdd");
+	$db = mysqli_select_db($conexion, "nedfitness") or die("Error al conectar a la bbdd");
+
+	$musculo = "Pecho";
+	$query = mysqli_query($conexion, "SELECT * FROM ejercicios WHERE grupo_muscular='" . $musculo . "'");
 	?>
 	<title>Rutina de pecho</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
@@ -42,62 +47,31 @@
 		</div>
 	</nav>
 	<div class="container">
-		<h1 class="text-center mt-5 text-white">Rutina de Pecho</h1>
-		<div class="row mt-5">
-			<div class="col-md-4">
-				<div class="card">
-					<img src="https://i.blogs.es/85d668/bench-press-1/1366_2000.webp" class="card-img-top" alt="Press de banca con barra">
-					<div class="card-body">
-						<h5 class="card-title">Press de banca con barra</h5>
-						<p class="card-text">El press de banca con barra es uno de los ejercicios más populares para
-							trabajar el pecho. Acuéstate en un banco plano con los pies firmemente apoyados en el suelo
-							y levanta la barra desde el soporte. Baja lentamente la barra hacia el pecho, mantén una
-							breve pausa y luego empuja la barra hacia arriba.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/press-up-1585328992.jpg?resize=480:*" class="card-img-top" alt="Flexiones de pecho">
-					<div class="card-body">
-						<h5 class="card-title">Flexiones de pecho</h5>
-						<p class="card-text">Las flexiones de pecho son un ejercicio clásico que se pueden hacer en
-							cualquier lugar. Coloca las manos en el suelo a la altura de los hombros y los pies juntos o
-							separados, baja el pecho hacia el suelo y luego empuja hacia arriba.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<img src="https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/press-pectoral-con-mancuernas-en-banco-inclinado-init-pos-8206.png" class="card-img-top" alt="Press de banca inclinado con mancuernas">
-					<div class="card-body">
-						<h5 class="card-title">Press de banca inclinado con mancuernas</h5>
-						<p class="card-text">El press de banca inclinado con mancuernas es un ejercicio excelente para
-							trabajar los músculos superiores del pecho. Acuéstate en un banco inclinado con una
-							mancuerna en cada mano, levanta las mancuernas hacia arriba y luego baja lentamente las
-							mancuernas hacia los lados del pecho.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row mt-5">
-			<div class="col-md-4">
-				<div class="card" id="cartamancuernas">
-					<img src="https://i.blogs.es/5c0b8f/aperturas/1366_2000.webp" class="card-img-top" alt="Aperturas con mancuernas">
-					<div class="card-body">
-						<h5 class="card-title">Aperturas con mancuernas</h5>
-						<p class="card-text">Las aperturas con mancuernas son un ejercicio excelente para trabajar los
-							músculos laterales del pecho. Acuéstate en un banco plano con una mancuerna en cada mano,
-							levanta los brazos hacia arriba y luego baja los brazos lentamente a los lados, manteniendo
-							un ligero arco en los codos. Cuando sientas un estiramiento en el pecho, levanta los brazos
-							de nuevo a la posición inicial.
-
-					</div>
-				</div>
-			</div>
-		</div>
+		<h1 class="text-center mt-4 text-white">Rutina de Pecho</h1>
+		<?php
+		$cont = 0;
+		while ($columna = mysqli_fetch_array($query)) {
+			if ($cont % 3 == 0) {
+				echo "<br/>	<div class='row'>";
+			}
+			echo "<div class='col-md-4'>
+				<div class='card'>";
+			echo "<img src=" . $columna['imagen'] . " class='card-img-top'>";
+			echo "<div class='card-body'>
+				<h5 class='card-title'>" . $columna['Nombre'] . "</h5>";
+			echo "<p class='card-text'>" . $columna['Descripción'] . "</p>";
+			echo "</div></div></div>";
+			if (($cont - 2) % 3 == 0) {
+				echo "</div>";
+			}
+			$cont++;
+		}
+		?>
 	</div>
 	<br>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

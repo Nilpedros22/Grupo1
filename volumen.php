@@ -44,8 +44,8 @@
       </div>
     </nav>
   </div>
-  <div class="table-container" id="tabla-dietas">
-    <h1 class="titulo">Dieta para superávit calórico</h1>
+  <h1 class="text-center mt-4 text-white">Dieta para superávit calórico</h1>
+  <div class="d-flex justify-content-center align-items-center">
     <table>
       <thead>
         <tr>

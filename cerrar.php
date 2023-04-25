@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="inicio.php">Inicio</a>
+              <a class="nav-link" href="inicio.php">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="rutinas.php">Rutinas</a>
@@ -34,7 +34,7 @@
             <li class="nav-item">
               <?php
               if (isset($_SESSION['loggedin'])) {
-                echo  "<a class='nav-link' href='cerrar.php'>" . $_SESSION['username'] . "</a>";
+                echo  "<a class='nav-link active' aria-current='page' href='cerrar.php'>" . $_SESSION['username'] . "</a>";
               }
               ?>
             </li>

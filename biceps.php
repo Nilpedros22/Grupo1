@@ -4,6 +4,11 @@
 <head>
 	<?php
 	session_start();
+	$conexion = mysqli_connect("localhost", "root", "") or die("Error al conectar a la bbdd");
+	$db = mysqli_select_db($conexion, "nedfitness") or die("Error al conectar a la bbdd");
+
+	$musculo = "Bíceps";
+	$query = mysqli_query($conexion, "SELECT * FROM ejercicios WHERE grupo_muscular='" . $musculo . "'");
 	?>
 	<title>Rutina de bíceps</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
@@ -42,57 +47,26 @@
 		</div>
 	</nav>
 	<div class="container">
-		<h1 class="text-center mt-5 text-white">Rutina de Bíceps</h1>
-		<div class="row mt-5">
-			<div class="col-md-4">
-				<div class="card">
-					<img src="https://i.blogs.es/d85006/elevaciones1/1366_2000.webp" class="card-img-top" alt="Curl de bíceps con mancuernas">
-					<div class="card-body">
-						<h5 class="card-title">Curl de bíceps con mancuernas</h5>
-						<p class="card-text">El curl de bíceps con mancuernas es uno de los ejercicios más populares
-							para trabajar los bíceps. Sostén una mancuerna en cada mano, mantén los codos pegados a los
-							costados y levanta las mancuernas hasta los hombros, luego baja lentamente.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<img src="https://i.blogs.es/eeba20/martillo1/1366_2000.webp" class="card-img-top" alt="Curl de martillo con mancuernas">
-					<div class="card-body">
-						<h5 class="card-title">Curl de martillo con mancuernas</h5>
-						<p class="card-text">El curl de martillo con mancuernas es un excelente ejercicio para trabajar
-							los bíceps y los antebrazos. Sostén una mancuerna en cada mano con los pulgares apuntando
-							hacia arriba, levanta las mancuernas hasta los hombros y luego baja lentamente.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<img src="https://i.blogs.es/70fc57/bicep-curls-1/1366_2000.webp" class="card-img-top" alt="Curl de bíceps en barra">
-					<div class="card-body">
-						<h5 class="card-title">Curl de bíceps en barra</h5>
-						<p class="card-text">El curl de bíceps en barra es otro ejercicio popular para trabajar los
-							bíceps. Toma una barra con un agarre amplio, levanta la barra hasta los hombros y luego baja
-							lentamente.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row mt-5">
-			<div class="col-md-4">
-				<div class="card" id="carta5">
-					<img src="https://i.blogs.es/3f2207/curl/1366_2000.webp" class="card-img-top" alt="Curl concentrado con mancuernas">
-					<div class="card-body">
-						<h5 class="card-title">Curl concentrado con mancuernas</h5>
-						<p class="card-text">El curl concentrado con mancuernas es un ejercicio excelente para trabajar
-							los bíceps y los antebrazos. Siéntate en un banco con una mancuerna en una mano, coloca el
-							brazo que sostiene la mancuerna en el interior del muslo y levanta la mancuerna hacia el
-							hombro, manteniendo el codo fijo en su lugar. Luego, baja lentamente la mancuerna hasta la
-							posición inicial y repite con la otra mano.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<h1 class="text-center mt-4 text-white">Rutina de Bíceps</h1>
+		<?php
+		$cont = 0;
+		while ($columna = mysqli_fetch_array($query)) {
+			if ($cont % 3 == 0) {
+				echo "<br/>	<div class='row'>";
+			}
+			echo "<div class='col-md-4'>
+				<div class='card'>";
+			echo "<img src=" . $columna['imagen'] . " class='card-img-top'>";
+			echo "<div class='card-body'>
+				<h5 class='card-title'>" . $columna['Nombre'] . "</h5>";
+			echo "<p class='card-text'>" . $columna['Descripción'] . "</p>";
+			echo "</div></div></div>";
+			if (($cont - 2) % 3 == 0) {
+				echo "</div>";
+			}
+			$cont++;
+		}
+		?>
 	</div>
 	<br>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
