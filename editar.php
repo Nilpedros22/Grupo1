@@ -30,8 +30,15 @@
                 echo "Error al modificar los datos";
             }
         }
-        $get_query = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='$correo'");
-        $get_result = mysqli_fetch_array($get_query);
+        $query = "SELECT * FROM usuarios WHERE correo='$correo'";
+        $get_query = mysqli_query($conexion, $query);
+        while ($get_result = mysqli_fetch_array($get_query)) {
+            $nombre = $get_result['Nombre'];
+            $apellidos = $get_result['Apellidos'];
+            $fecha = $get_result['Fecha_Nacimiento'];
+            $email = $get_result['Correo'];
+            $password = $get_result['Contraseña'];
+        }
     ?>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
@@ -76,7 +83,7 @@
                                 <form action="" method="post" class="needs-validation" novalidate="" autocomplete="off">
                                     <div class="mb-3">
                                         <label class="mb-2 text-muted" for="name">Nuevo Nombre</label>
-                                        <input id="nombre" type="text" class="form-control" name="nombre" value="" required autofocus>
+                                        <input id="nombre" type="text" class="form-control" name="nombre" value="<?php echo $nombre; ?>" required autofocus>
                                         <div class="invalid-feedback">
                                             El nombre es obligatorio
                                         </div>
@@ -84,23 +91,23 @@
 
                                     <div class="mb-3">
                                         <label class="mb-2 text-muted" for="name">Nuevo Apellido</label>
-                                        <input id="apellidos" type="text" class="form-control" name="apellidos" value="" required autofocus>
+                                        <input id="apellidos" type="text" class="form-control" name="apellidos" value="<?php echo $apellidos; ?>" required autofocus>
                                         <div class="invalid-feedback">
-                                            Los apellidos son obligatorio
+                                            Los apellidos son obligatorios
                                         </div>
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="mb-2 text-muted" for="name">Nueva fecha de nacimiento</label>
-                                        <input id="fecha" type="date" class="form-control" name="fecha" value="" aria-label="dd / mm / aaaa" placeholder="dd / mm / aaaa" required autofocus>
+                                        <input id="fecha" type="date" class="form-control" name="fecha" value="<?php echo $fecha; ?>" aria-label="dd / mm / aaaa" placeholder="dd / mm / aaaa" required autofocus>
                                         <div class="invalid-feedback">
-                                            Los apellidos son obligatorio
+                                            La fecha de nacimiento es obligatoria
                                         </div>
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="mb-2 text-muted" for="email">Nuevo Email</label>
-                                        <input id="email" type="email" class="form-control" name="email" value="" required>
+                                        <input id="email" type="email" class="form-control" name="email" value="<?php echo $email; ?>" required>
                                         <div class="invalid-feedback">
                                             El correo es obligatorio
                                         </div>
@@ -108,7 +115,7 @@
 
                                     <div class="mb-3">
                                         <label class="mb-2 text-muted" for="password">Nueva Contraseña</label>
-                                        <input id="password" type="password" minlength="6" class="form-control" name="password" required>
+                                        <input id="password" type="password" minlength="6" class="form-control" name="password" value="<?php echo $password; ?>" required>
                                         <div class="invalid-feedback">
                                             La contraseña es obligatoria
                                         </div>
@@ -126,8 +133,6 @@
         </section>
         <br>
     <?php
-    } else {
-        echo "Logueate para acceder a la página.";
     }
     ?>
     <script src="js/login.js"></script>
