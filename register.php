@@ -74,7 +74,7 @@
 									<label class="mb-2 text-muted" for="name">Apellidos</label>
 									<input id="apellidos" type="text" class="form-control" name="apellidos" value="" required autofocus>
 									<div class="invalid-feedback">
-										Los apellidos son obligatorio
+										Los apellidos son obligatorios
 									</div>
 								</div>
 
@@ -82,7 +82,7 @@
 									<label class="mb-2 text-muted" for="name">Fecha de nacimiento</label>
 									<input id="fecha" type="date" class="form-control" name="fecha" value="" aria-label="dd / mm / aaaa" placeholder="dd / mm / aaaa" required autofocus>
 									<div class="invalid-feedback">
-										Los apellidos son obligatorio
+										La fecha de nacimiento es obligatoria
 									</div>
 								</div>
 

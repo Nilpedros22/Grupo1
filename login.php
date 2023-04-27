@@ -25,7 +25,7 @@
       $_SESSION['username'] = $email;
       header("Location: inicio.php");
     } else if ($nr == 0) {
-      echo "Correo o contraseña incorrectos.";
+      echo "<script>alert('Correo o contraseña incorrectos.');</script>";
     }
   }
   ?>
