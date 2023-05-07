@@ -102,7 +102,7 @@
     </table>
   </div>
   <br>
-  <footer class="d-flex justify-content-center align-items-center">
+  <footer class="d-flex justify-content-center align-items-center footer fixed-bottom">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <div class="wrapper">
       <div class="button">

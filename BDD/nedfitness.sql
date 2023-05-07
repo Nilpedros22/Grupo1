@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-04-2023 a las 00:31:47
+-- Tiempo de generación: 07-05-2023 a las 23:53:02
 -- Versión del servidor: 10.4.27-MariaDB
--- Versión de PHP: 8.1.12
+-- Versión de PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,7 +33,7 @@ CREATE TABLE `ejercicios` (
   `ID` int(11) NOT NULL,
   `Nombre` varchar(50) NOT NULL,
   `Descripción` varchar(750) NOT NULL,
-  `imagen` varchar(1000) NOT NULL,
+  `Imagen` varchar(1000) NOT NULL,
   `Grupo_Muscular` char(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -41,7 +41,7 @@ CREATE TABLE `ejercicios` (
 -- Volcado de datos para la tabla `ejercicios`
 --
 
-INSERT INTO `ejercicios` (`ID`, `Nombre`, `Descripción`, `imagen`, `Grupo_Muscular`) VALUES
+INSERT INTO `ejercicios` (`ID`, `Nombre`, `Descripción`, `Imagen`, `Grupo_Muscular`) VALUES
 (101, 'Press de banca con barra', 'El press de banca con barra es uno de los ejercicios más populares para trabajar el pecho. Acuéstate en un banco plano con los pies firmemente apoyados en el suelo y levanta la barra desde el soporte. Baja lentamente la barra hacia el pecho, mantén una breve pausa y luego empuja la barra hacia arriba.', 'https://i.blogs.es/85d668/bench-press-1/1366_2000.webp', 'Pecho'),
 (102, 'Flexiones de pecho', 'Las flexiones de pecho son un ejercicio clásico que se pueden hacer en cualquier lugar. Coloca las manos en el suelo a la altura de los hombros y los pies juntos o separados, baja el pecho hacia el suelo y luego empuja hacia arriba.', 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/press-up-1585328992.jpg?resize=480:*', 'Pecho'),
 (103, 'Press de banca inclinado con mancuernas', 'El press de banca inclinado con mancuernas es un ejercicio excelente para trabajar los músculos superiores del pecho. Acuéstate en un banco inclinado con una mancuerna en cada mano, levanta las mancuernas hacia arriba y luego baja lentamente las mancuernas hacia los lados del pecho.', 'https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/press-pectoral-con-mancuernas-en-banco-inclinado-init-pos-8206.png', 'Pecho'),
@@ -115,7 +115,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `ejercicios`
 --
 ALTER TABLE `ejercicios`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=607;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=608;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

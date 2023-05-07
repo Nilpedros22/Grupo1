@@ -10,7 +10,7 @@
 	$musculo = "Piernas";
 	$query = mysqli_query($conexion, "SELECT * FROM ejercicios WHERE grupo_muscular='" . $musculo . "'");
 	?>
-	<title>Rutina de piernas</title>
+	<title>Rutina de Piernas</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="general.css">
 </head>
@@ -47,7 +47,7 @@
 		</div>
 	</nav>
 	<div class="container">
-		<h1 class="text-center mt-4 text-white">Rutina de piernas</h1>
+		<h1 class="text-center mt-4 text-white">Rutina de Piernas</h1>
 		<?php
 		$cont = 0;
 		while ($columna = mysqli_fetch_array($query)) {
@@ -56,7 +56,7 @@
 			}
 			echo "<div class='col-md-4'>
 				<div class='card'>";
-			echo "<img src=" . $columna['imagen'] . " class='card-img-top'>";
+			echo "<img src=" . $columna['Imagen'] . " class='card-img-top'>";
 			echo "<div class='card-body'>
 				<h5 class='card-title'>" . $columna['Nombre'] . "</h5>";
 			echo "<p class='card-text'>" . $columna['Descripción'] . "</p>";
