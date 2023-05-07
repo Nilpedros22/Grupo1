@@ -44,39 +44,66 @@
       </div>
     </div>
   </nav>
-
-  <div id="fondo">
-
-    </h2>
-    <div class="container">
-      <h1 class="titulo2">Selecciona tu dieta</h1>
-      <div class="row">
-        <div class="col-md-5">
-          <div class="jumbotron">
-            <div class="card"><img src="img/definido.jpg" class="card-img-top" alt="Dieta para déficit calórico">
-              <div>
-                <h1 class="card-title ">Dieta para déficit calórico</h1>
-                <p class="card-text">Esta dieta es para aquellas personas que buscan perder peso y reducir su ingesta calórica.</p>
-                <a href="definicion.php" class="btn btn-info text-white fw-semibold">Acceder</a>
-              </div>
+  <div class="d-flex align-items-center d-flex justify-content-center align-items-center">
+    <h1 class="titulo2">Selecciona tu dieta</h1>
+  </div>
+  <div class="d-flex justify-content-center align-items-center" id="container">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-md-5">
+        <div class="jumbotron">
+          <div class="card"><img src="img/definido.jpg" class="card-img-top" alt="Dieta para déficit calórico">
+            <div>
+              <h1 class="card-title ">Dieta para déficit calórico</h1>
+              <p class="card-text">Esta dieta es para aquellas personas que buscan perder peso y reducir su ingesta calórica.</p>
+              <a href="definicion.php" class="btn btn-info text-white fw-semibold">Acceder</a>
             </div>
           </div>
         </div>
-        <div class="col-md-5">
-          <div class="jumbotron">
-            <div class="card"><img src="img/volumen.jpg" class="card-img-top" alt="Dieta para déficit calórico">
-              <div>
-                <h1 class="card-title1 ">Dieta para superávit calórico</h1>
-                <p class="card-text1">Esta dieta es para aquellas personas que buscan aumentar de peso y aumentar su ingesta calórica.</p>
-                <a href="volumen.php" class="btn btn-info text-white fw-semibold">Acceder</a>
-              </div>
+      </div>
+      <div class="col-md-5">
+        <div class="jumbotron">
+          <div class="card"><img src="img/volumen.jpg" class="card-img-top" alt="Dieta para déficit calórico">
+            <div>
+              <h1 class="card-title1 ">Dieta para superávit calórico</h1>
+              <p class="card-text1">Esta dieta es para aquellas personas que buscan aumentar de peso y aumentar su ingesta calórica.</p>
+              <a href="volumen.php" class="btn btn-info text-white fw-semibold">Acceder</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <br>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </div>
+  <br>
+  <footer class="d-flex justify-content-center align-items-center">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <div class="wrapper">
+      <div class="button">
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+        <span>Facebook</span>
+      </div>
+      <div class="button">
+        <div class="icon">
+          <i class="fab fa-twitter"></i>
+        </div>
+        <span>Twitter</span>
+      </div>
+      <div class="button">
+        <div class="icon">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <span>Instagram</span>
+      </div>
+      <div class="button">
+        <div class="icon">
+          <i class="fab fa-youtube"></i>
+        </div>
+        <span>YouTube</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 
 </html>
