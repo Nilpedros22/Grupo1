@@ -17,7 +17,7 @@
     $conexion = mysqli_connect("localhost", "root", "") or die("Error al conectar a la bbdd");
     $db = mysqli_select_db($conexion, "nedfitness") or die("Error al conectar a la bbdd");
     $email = $_POST["email"];
-    $password = $_POST["password"];
+    $password = hash('sha512', $_POST["password"]);
     $query = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='" . $email . "' AND contraseña ='" . $password . "'");
     $nr = mysqli_num_rows($query);
     if ($nr == 1) {

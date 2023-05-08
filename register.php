@@ -14,7 +14,7 @@
 	$conexion = mysqli_connect("localhost", "root", "") or die("Error al connectar a la bbdd.");
 	$db = mysqli_select_db($conexion, "nedfitness") or die("Error al connectar a la bbdd");
 	if (!empty($_POST['nombre']) && !empty($_POST['apellidos']) && !empty($_POST['fecha']) && !empty($_POST['email']) && !empty($_POST['password'])) {
-		$consulta = "INSERT INTO usuarios (nombre, apellidos, fecha_nacimiento, correo, contraseña) VALUES ('" . $_POST['nombre'] . "','" . $_POST['apellidos'] . "','" . $_POST['fecha'] . "','" . $_POST['email'] . "','" . $_POST['password'] . "');";
+		$consulta = "INSERT INTO usuarios (nombre, apellidos, fecha_nacimiento, correo, contraseña) VALUES ('" . $_POST['nombre'] . "','" . $_POST['apellidos'] . "','" . $_POST['fecha'] . "','" . $_POST['email'] . "','" . hash('sha512', $_POST['password']). "');";
 		$resultado = mysqli_query($conexion, $consulta) or die("Error en la consulta SQL");
 		if ($resultado) {
 			header("Location: login.php");

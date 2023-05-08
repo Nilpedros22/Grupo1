@@ -19,6 +19,9 @@
   if (!empty($_POST['nombre']) && !empty($_POST['descripcion']) && !empty($_POST['imagen']) && !empty($_POST['grupo_muscular'])) {
     $consulta = "INSERT INTO ejercicios (nombre, descripción, imagen, grupo_muscular) VALUES ('" . $_POST['nombre'] . "','" . $_POST['descripcion'] . "','" . $_POST['imagen'] . "','" . $_POST['grupo_muscular'] . "');";
     $resultado = mysqli_query($conexion, $consulta) or die("Error en la consulta SQL");
+    if ($resultado) {
+      echo "<script>alert('Ejercicio añadido a la rutina.');</script>";
+    }
   }
   mysqli_close($conexion);
   ?>

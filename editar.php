@@ -21,7 +21,7 @@
             $new_apellido = $_POST['apellidos'];
             $new_fecha = $_POST['fecha'];
             $new_email = $_POST['email'];
-            $new_password = $_POST['password'];
+            $new_password = hash('sha512', $_POST['password']);
 
             $update_query = mysqli_query($conexion, "UPDATE usuarios SET nombre='$new_nombre', apellidos='$new_apellido', fecha_nacimiento='$new_fecha', correo='$new_email', contraseña='$new_password' WHERE correo='$correo'");
             if ($update_query) {
@@ -115,7 +115,7 @@
 
                                     <div class="mb-3">
                                         <label class="mb-2 text-muted" for="password">Nueva Contraseña</label>
-                                        <input id="password" type="password" minlength="6" class="form-control" name="password" value="<?php echo $password; ?>" required>
+                                        <input id="password" type="password" minlength="6" class="form-control" name="password" value="" required>
                                         <div class="invalid-feedback">
                                             La contraseña es obligatoria
                                         </div>

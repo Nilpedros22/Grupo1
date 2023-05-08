@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-05-2023 a las 23:53:02
+-- Tiempo de generación: 08-05-2023 a las 19:31:48
 -- Versión del servidor: 10.4.27-MariaDB
--- Versión de PHP: 8.2.0
+-- Versión de PHP: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -81,7 +81,7 @@ CREATE TABLE `usuarios` (
   `Apellidos` varchar(30) NOT NULL,
   `Fecha_Nacimiento` date NOT NULL,
   `Correo` varchar(35) NOT NULL,
-  `Contraseña` varchar(25) NOT NULL
+  `Contraseña` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -89,7 +89,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`ID`, `Nombre`, `Apellidos`, `Fecha_Nacimiento`, `Correo`, `Contraseña`) VALUES
-(1, 'Nil', 'Pedrós', '2001-08-22', 'cabrillana@gmail.com', 'ceroca1234');
+(2, 'Nil', 'Pedrós ', '2001-08-22', 'cabrillana@gmail.com', 'b49a124ed48256b7e1e62bfb55b83b8f0270241753d46b37345c588012e912294e153df0ffbfef0e449c42d9f92e0c2ecc02860c8e2398041f3b1633b99d699b');
 
 --
 -- Índices para tablas volcadas
@@ -115,13 +115,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `ejercicios`
 --
 ALTER TABLE `ejercicios`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=608;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=613;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `ID` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
