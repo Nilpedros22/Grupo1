@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-05-2023 a las 19:31:48
+-- Tiempo de generación: 18-05-2023 a las 15:55:40
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.1.12
 
@@ -89,7 +89,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`ID`, `Nombre`, `Apellidos`, `Fecha_Nacimiento`, `Correo`, `Contraseña`) VALUES
-(2, 'Nil', 'Pedrós ', '2001-08-22', 'cabrillana@gmail.com', 'b49a124ed48256b7e1e62bfb55b83b8f0270241753d46b37345c588012e912294e153df0ffbfef0e449c42d9f92e0c2ecc02860c8e2398041f3b1633b99d699b');
+(3, 'Nil', 'Pedrós Cabrillana', '2001-08-22', 'cabrillana@gmail.com', '13e94c69221eecb3967fee2996d479411186068acee98ae48e555afc481b1782bbcc677548c0be8384de8f0cb8ca42548070d135972a0e077bf7c06b954c1b22');
 
 --
 -- Índices para tablas volcadas
@@ -121,7 +121,7 @@ ALTER TABLE `ejercicios`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `ID` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -61,11 +61,11 @@
     <div class="row">
       <div class="col-md-4 mb-3">
         <div class="card">
-          <img src="https://www.ecured.cu/images/6/67/Pecho.jpeg" class="card-img-top" alt="Shoulders">
+          <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pectorales-1561054672.jpg" class="card-img-top" alt="Shoulders">
           <div class="card-body">
             <h5 class="card-title">Pecho</h5>
             <p class="card-text">Fortalece tus pectorales y mejora tu postura.</p>
-            <a href="pecho.php" class="btn btn-info text-white fw-semibold">Seleccionar</a>
+            <a href="pecho.php" class="btn btn-info text-white fw-semibold">Acceder</a>
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
           <div class="card-body">
             <h5 class="card-title">Espalda</h5>
             <p class="card-text">Mejora tu postura y fortalece tus dorsales.</p>
-            <a href="espalda.php" class="btn btn-info text-white fw-semibold">Seleccionar</a>
+            <a href="espalda.php" class="btn btn-info text-white fw-semibold">Acceder</a>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@
           <div class="card-body">
             <h5 class="card-title">Tríceps</h5>
             <p class="card-text">Mejora tus tríceps y fortalece tus brazos en general.</p>
-            <a href="triceps.php" class="btn btn-info text-white fw-semibold">Seleccionar</a>
+            <a href="triceps.php" class="btn btn-info text-white fw-semibold">Acceder</a>
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@
           <div class="card-body">
             <h5 class="card-title">Hombros</h5>
             <p class="card-text">Entrena tus hombros con estos ejercicios para ganar fuerza y tamaño.</p>
-            <a href="hombro.php" class="btn btn-info text-white fw-semibold">Seleccionar</a>
+            <a href="hombro.php" class="btn btn-info text-white fw-semibold">Acceder</a>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
           <div class="card-body">
             <h5 class="card-title">Bíceps</h5>
             <p class="card-text">Define tus brazos y aumenta el tamaño de tus bíceps con estos ejercicios.</p>
-            <a href="biceps.php" class="btn btn-info text-white fw-semibold">Seleccionar</a>
+            <a href="biceps.php" class="btn btn-info text-white fw-semibold">Acceder</a>
           </div>
         </div>
       </div>
@@ -115,7 +115,7 @@
           <div class="card-body">
             <h5 class="card-title">Piernas</h5>
             <p class="card-text">Desarrolla piernas más fuertes y definidas con esta selección de ejercicios.</p>
-            <a href="pierna.php" class="btn btn-info text-white fw-semibold">Seleccionar</a>
+            <a href="pierna.php" class="btn btn-info text-white fw-semibold">Acceder</a>
           </div>
         </div>
       </div>
